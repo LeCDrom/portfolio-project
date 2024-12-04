@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    font-family: "Ubuntu Mono";
+}
+
+body {
+    background-color: #1d1c20;
+    
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ========================== Header Section ========================== */
+
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    padding-inline: 5rem;
+    
+}
+
+#main-header h2 {
+       
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 24rem;
+}
+
+#main-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 4rem;
+    font-size: 140%;
+}
+
+/* ========================== SaE Section ========================== */
+
+#SaE-main {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 5rem 5rem 0 5rem;
+    height: 50vh;
+    padding-bottom: calc(100vh - 40rem);
+    background-color: #292431;
+    /* box-shadow: inset 0px 0px 15px; */
+}
+
+#SaE-description {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35vw;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#SaE-main h1 {
+    font-size: 35px;
+}
+
+#SaE-main p {
+    color: #a99cbd;
+    font-weight: 100;
+    align-content: center;
+}
+
+#SaE-goto {
+    padding-top: 2rem;
+}
+
+#SaE-goto a {
+    border: #8a65c1 2px solid;
+    padding: 0.5rem 1rem 0.6rem 1rem;
+    border-radius: 50px;
+    font-size: 115%;
+}
+
+#SaE-goto a:hover {
+    background-color: #8a65c1;
+}
