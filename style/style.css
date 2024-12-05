@@ -1,16 +1,27 @@
+/* CSS HEX */
+:root {
+    --licorice: #1a0b17ff;
+    --dark-purple: #2d162cff;
+    /* --russian-violet: #412752ff; */
+    --finn: #683a68ff;
+    --african-violet: #9d74a6ff;
+    --pink-lavender: #cea9b9ff;
+    --pale-dogwood: #ffddcbff;
+}
+
 * {
     margin: 0;
     font-family: "Ubuntu Mono";
 }
 
 body {
-    background-color: #1d1c20;
+    background-color: var(--licorice);
     
-    color: white;
+    color: #FFDDCB;
 }
 
 a {
-    color: white;
+    color: #FFDDCB;
     text-decoration: none;
 }
 
@@ -31,8 +42,9 @@ a {
     
 }
 
-#main-header h2 {
-       
+#header-title {
+    font-size: 24px;
+    font-weight: 900;
 }
 
 #main-nav {
@@ -57,9 +69,9 @@ a {
     flex-direction: row;
     padding: 10vh 5vw 10vh 5vw;
     height: 50vh;
-    background-color: #292431;
+    background-color: var(--dark-purple);
     box-shadow: 0px 0px 20px #00000060;
-
+    /* border-radius: 0 0 20px 20px; */
 }
 
 #SaE-description {
@@ -75,7 +87,7 @@ a {
 }
 
 #SaE-description p {
-    color: #a99cbd;
+    color: var(--pink-lavender);
     font-weight: 100;
 }
 
@@ -84,14 +96,14 @@ a {
 }
 
 #SaE-goto a {
-    border: #8a65c1 2px solid;
+    border: var(--finn) 2px solid;
     padding: 0.5rem 1rem 0.6rem 1rem;
     border-radius: 50px;
     font-size: 115%;
 }
 
 #SaE-goto a:hover {
-    background-color: #8a65c1;
+    background-color: var(--finn);
 }
 
 
@@ -102,8 +114,12 @@ a {
     gap: 1rem;
 }
 
+#liste h1 {
+    color: var(--pink-lavender);
+}
+
 #liste p {
-    color: #a99cbd;
+    color: var(--african-violet);
     font-weight: 100;
     margin-right: 50vw;
 }
@@ -112,11 +128,46 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
     gap: 1rem;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
-.carousel {
+#SaE-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
     background-color: #292431;
-    height: 10px;
-    width: 10px;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    /* border-style: solid;
+    border-width: 2px; */
+    background-image: linear-gradient(-45deg, var(--dark-purple), var(--finn));
+    flex-shrink: 0;
+    transition: ease-out 0.2s;
+}
+
+.carousel-item:hover {
+    box-shadow: inset 0px 0px 20px 0 var(--licorice);
+}
+
+#SaE-11 {
+    /* background-image: linear-gradient(-45deg, #572a47, #fc7981);
+    border-color: #fc798d; */
+}
+
+#SaE-12 {
+    /* background-image: linear-gradient(-45deg, #344f82, #8158a3);
+    border-color: #8158a3; */
+}
+
+#SaE-14 {
+    /* background-image: linear-gradient(-45deg, #396764, #8394bd);
+    border-color: #8394bd; */
 }
