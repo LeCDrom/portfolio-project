@@ -62,7 +62,36 @@ a {
     font-size: 140%;
 }
 
+.header-links {
+    text-decoration: none;
+    position: relative;
+    color: var(--pale-dogwood);
+}
+
+.header-links::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--pale-dogwood);
+    transform: translateX(-50%);
+    transition: width 0.3s ease-out;
+}
+
+.header-links:hover::after {
+    width: 100%;
+}
+
 /* ========================== SaE Section ========================== */
+
+body {
+    background-image: url(/images/Curve\ Line\ \(2\).svg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
 
 #SaE-main {
     display: flex;
@@ -70,8 +99,11 @@ a {
     padding: 10vh 5vw 10vh 5vw;
     height: 50vh;
     background-color: var(--dark-purple);
-    box-shadow: 0px 0px 20px #00000060;
+    background-color: transparent;
     /* border-radius: 0 0 20px 20px; */
+
+    /* background-image: url(/images/Curve\ Line.svg);
+    background-size: cover ; */
 }
 
 #SaE-description {
@@ -113,6 +145,8 @@ a {
     flex-direction: column;
     padding: 2.5rem 5rem 0 5rem;
     gap: 1rem;
+    background-color: var(--licorice);
+    box-shadow: inset 0px 0px 20px #00000060;
 }
 
 #liste h1 {
